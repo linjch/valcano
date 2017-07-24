@@ -640,6 +640,25 @@ width: 10px;
 	position: relative;
 }
 
+.single-product-area .introduce  ul li {
+	width:31%;
+	float:left;
+	background:#333;
+	position: relative;
+	padding:20px 20px;
+	font-size:12px;
+	color:#fff;
+	margin-left:2%;
+	display:inline-block;
+	vertical-align: middle;
+	line-height : 1.8em;
+}
+
+.single-product-area .introduce  ul li:hover{
+	background:#ffb900;
+	color:#000;
+}
+
 .sidebar-title {
     color: #3dc6ab;
     font-size: 25px;
