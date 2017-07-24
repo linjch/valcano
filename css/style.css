@@ -462,10 +462,21 @@ z-index: 9;
 }
 .product-widget-area .zigzag-bottom{background: #333}
 .footer-top-area .zigzag-bottom{background: #000}
-.footer-top-area {background: none repeat scroll 0 0 #333;
-color: #999;
-padding: 35px 0 180px;}
-
+.footer-top-area {
+	background: none repeat scroll 0 0 #333;
+	color: #999;
+	padding: 50px 0 50px;
+	text-align:center;
+}
+.footer-top-area button{
+	border:0.05em solid #ffb900;
+	border-left:0.09em solid #ffb900;
+	border-top:0.09em solid #ffb900;
+	color:#ffb900;
+	width:100px;
+	height:26px;
+	background:#333;
+}
 
 .footer-bottom-area {background: #000;color: #fff}
 .footer-about-us span {
@@ -611,6 +622,11 @@ width: 10px;
 
 .single-product-area {
   padding: 50px 0 130px;
+}
+
+.single-product-area .row p{
+	margin-left:20%;
+	margin-right:20%;
 }
 
 .product-list{
