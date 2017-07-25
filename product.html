@@ -51,7 +51,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">首页</a></li>
                         <li><a href="shop.html">我们</a></li>
-                        <li  class="active"><a href="single-product.html">作品</a></li>
+                        <li class="active"><a href="single-product.html">作品</a></li>
                         <li><a href="cart.html">招聘</a></li>
                         <li><a href="checkout.html">联系</a></li>
                     </ul>
@@ -61,17 +61,13 @@
     </div>
 
     <div class="product-big-title-area">
-	<!--
-        <div class="container">
+		<div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="product-bit-title text-center">
-                        <h2>Shop</h2>
-                    </div>
-                </div>
+				<h2>PASSION LIKE FIRE</h2>
+				<h2>AS STEADY AS A MOUNTAIN</h2>
+                <h4>热爱如火&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;稳健如山</h4>
             </div>
         </div>
-		-->
     </div>
     
     <div class="single-product-area">
@@ -117,7 +113,7 @@
     <div class="footer-top-area">
         <div class="container">
             <div class="row">
-                <h4>“热爱如为，稳健如山”</h4>
+                <h4>“热爱如火，稳健如山”</h4>
 				<h4>让我们一起创建出更优秀有动画作品</h4>
 				<button>立即联系</button>
             </div>
@@ -128,18 +124,31 @@
 		$(function(){
 			var images_height = $("#product-list").width() * 0.2;
 			var images_url = [
-				'img/product-1.jpg',
-				'img/product-2.jpg',
-				'img/product-3.jpg',
-				'img/product-4.jpg',
-				'img/product-5.jpg',
-				'img/product-6.jpg',
-				'img/product-1.jpg',
-				'img/product-2.jpg',
-				'img/product-3.jpg',
-				'img/product-4.jpg',
-				'img/product-5.jpg',
-				'img/product-6.jpg'
+				'img/product_06.jpg',
+				'img/product_07.jpg',
+				'img/product_08.jpg',
+				'img/product_09.jpg',
+				'img/product_10.jpg',
+				'img/product_11.jpg',
+				'img/product_12.jpg',
+				'img/product_13.jpg',
+				'img/product_14.jpg',
+				'img/product_15.jpg',
+				'img/product_16.jpg',
+				'img/product_17.jpg',
+				'img/product_18.jpg',
+				'img/product_19.jpg',
+				'img/product_20.jpg',
+				'img/product_21.jpg',
+				'img/product_22.jpg',
+				'img/product_23.jpg',
+				'img/product_24.jpg',
+				'img/product_25.jpg',
+				'img/product_26.jpg',
+				'img/product_27.jpg',
+				'img/product_28.jpg',
+				'img/product_29.jpg',
+				'img/product_30.jpg'
 			];
 			var video_url = [
 				'video/vedio1.mp4',
@@ -169,6 +178,11 @@
 						+'<input type="image" id="imgbutton'+j+'" src="img/bofang.png" data-reveal-id="playvedio"/></div></li>');
 				}
 			}
+			/*
+			if(0 != Number(images_count) % 5){
+				var the_width = Number(Number(total_count) - Number(images_count)) * images_height;
+				$('.product-list ul').append('<div style="border:1px solid red;position:absolute;text-align:center;font-weight:bold;color:#000;right:0;bottom:;width:'+the_width+'px;height:'+images_height+'px;line-height:'+images_height+'px">更多作品敬请期待</div>');
+			}*/
 			//载入图片
 			/*
 			$.each(images_url,function(key,value){
@@ -178,9 +192,6 @@
 			$('.product-list ul li').css('height',images_height);
 			$('.product-list ul li img').css('width','100%');
 			$('.product-list ul li img').css('height','100%');
-			$('.product-list ul li button').css('background-image','url("img/bofang.png")');
-			$('.product-list ul li button').css('height','20%');
-			$('.product-list ul li button').css('width','20%');
 								
 			$('.product-hover').hover(function(){
 				$('#' + this.id + ' input[type="image"]').show();

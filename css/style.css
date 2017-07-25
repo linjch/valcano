@@ -172,8 +172,14 @@ z-index: 999;}
 	font-size:0;
 	overflow:hidden;
 }
-.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: #222}
-.mainmenu-area .nav > li > a:focus {color: #000}
+.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {
+	/*background: #222*/
+	background:#323A3C;
+	border-bottom:1px solid #ffb900;
+	color:#ffb900;
+}
+
+.mainmenu-area .nav > li > a:focus {/*color: #000*/}
 
 .slider-area {clear: both}
 .slider-area, .promo-area, .brands-area, .maincontent-area, .footer-top-area, .product-widget-area, .product-breadcroumb-area, .single-product-area {position: relative;overflow: hidden}
@@ -608,6 +614,9 @@ width: 10px;
 .product-big-title-area {
 	background: url(../img/crossword.png) repeat scroll 0 0 #1ABC9C;
 	height:330px;
+	color:#fff;
+	padding: 80px 0 80px;
+	text-align:center;
 }
 
 .product-bit-title h2 {
@@ -631,6 +640,7 @@ width: 10px;
 
 .product-list{
 	padding:30px;
+	position:relative;
 }
 
 .product-list ul li {
